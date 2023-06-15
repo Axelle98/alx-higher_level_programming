@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const dictionary = require('./101-data.js').dict;
-let newdict = {};
-for (let key in dictionary) {
+const newdict = {};
+for (const key in dictionary) {
   if (newdict[dictionary[key]] === undefined) {
     newdict[dictionary[key]] = [];
   }
